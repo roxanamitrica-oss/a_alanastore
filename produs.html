@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produs Detaliu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>Magazin Online</h1>
+<nav>
+<a href="index.html">Acasă</a>
+<a href="produse.html">Produse</a>
+<a href="checkout.html">Checkout</a>
+</nav>
+</header>
+
+<section class="container" id="product-detail">
+<h2 id="prod-name">Produs Demo</h2>
+<img id="prod-img" src="img/produs1.jpg" alt="Produs" style="width:300px; height:300px; object-fit:cover; border-radius:10px;">
+<p id="prod-price">100 lei</p>
+<p id="prod-desc">Descrierea produsului va fi aici.</p>
+<button onclick="addToCart(1)">Adaugă în coș</button>
+</section>
+
+<div id="mini-cart">
+<h3>Coș Mini</h3>
+<ul id="cart-items"></ul>
+<p>Total: <span id="total">0</span> lei</p>
+</div>
+
+<footer>&copy; 2025 Magazin Online. Toate drepturile rezervate.</footer>
+<script src="js/script.js"></script>
+<script>
+  // În realitate, preia produsul din URL sau DB
+  document.getElementById('prod-name').innerText = "Produs 1";
+  document.getElementById('prod-price').innerText = "120 lei";
+  document.getElementById('prod-desc').innerText = "Aceasta este o descriere demo pentru produsul 1.";
+</script>
+</body>
+</html>

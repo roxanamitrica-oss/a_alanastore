@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>Magazin Online</h1>
+<nav>
+<a href="index.html">Acasă</a>
+<a href="produse.html">Produse</a>
+<a href="checkout.html">Checkout</a>
+</nav>
+</header>
+
+<section class="container" id="checkout-section">
+<div id="checkout">
+<h3>Checkout</h3>
+<form id="checkout-form">
+<input type="text" placeholder="Nume" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Adresă" required>
+<input type="text" placeholder="Oraș" required>
+<button type="submit">Plasează comanda</button>
+</form>
+</div>
+</section>
+
+<div id="mini-cart">
+<h3>Coș Mini</h3>
+<ul id="cart-items"></ul>
+<p>Total: <span id="total">0</span> lei</p>
+</div>
+
+<footer>&copy; 2025 Magazin Online. Toate drepturile rezervate.</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
