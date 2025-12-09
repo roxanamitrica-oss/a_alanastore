@@ -1,0 +1,111 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+header {
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* PRODUSE */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: .2s;
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000;
+}
+
+/* MINI CART */
+#mini-cart {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* CHECKOUT */
+#checkout form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* SEARCH + FILTRE */
+.filter-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
